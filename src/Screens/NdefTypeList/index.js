@@ -8,13 +8,13 @@ function NdefTypeListScreen(props) {
 
   return (
     <>
-      <Appbar.Header style={{backgroundColor: 'white'}}>
+      <Appbar.Header style={{backgroundColor: '#00abff'}}>
         <Text style={{marginLeft: 10, fontSize: 24}}>WRITE NDEF</Text>
       </Appbar.Header>
 
       <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
         <List.Section>
-          <List.Subheader>Well Known</List.Subheader>
+          <List.Subheader>Few Operations</List.Subheader>
           <List.Item
             title="TEXT"
             description="Write text into NFC tags"
@@ -83,7 +83,7 @@ function NdefTypeListScreen(props) {
             }
           />
 
-          <List.Subheader>MIME</List.Subheader>
+          {/* <List.Subheader>MIME</List.Subheader> */}
           <List.Item
             title="WiFi Simple Record"
             description="Connect to your WiFi AP"
@@ -98,7 +98,7 @@ function NdefTypeListScreen(props) {
 
           <List.Item
             title="vCard"
-            description="Write contact records. Please beaware vCard format is not supported by iOS natively"
+            description="Write contact records"
             left={NfcIcons.ContactIcon}
             onPress={() =>
               navigation.navigate('Main', {

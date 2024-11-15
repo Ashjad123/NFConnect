@@ -216,7 +216,7 @@ function HomeScreen(props) {
             alignItems: 'center',
           }}>
           <Image
-            source={require('../../../images/nfc-rewriter-icon.png')}
+            source={require('../../../images/nfc-logo.jpeg')}
             style={{width: 250, height: 250}}
             resizeMode="contain"
           />
@@ -228,7 +228,7 @@ function HomeScreen(props) {
               textAlign: 'center',
               color: '#666',
             }}>
-            Open Source NFC Reader/Writer
+             NFC Connect
           </Text>
 
           <TouchableOpacity
@@ -244,10 +244,10 @@ function HomeScreen(props) {
               justifyContent: 'center',
               marginBottom: 10,
             }}>
-            <Icon name="github" size={18} color={'#888'} />
-            <Text style={{marginLeft: 6, color: '#888'}}>
+            {/* <Icon name="github" size={18} color={'#888'} /> */}
+            {/* <Text style={{marginLeft: 6, color: '#888'}}>
               Github Repo (App)
-            </Text>
+            </Text> */}
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -263,14 +263,14 @@ function HomeScreen(props) {
               justifyContent: 'center',
               marginBottom: 10,
             }}>
-            <Icon name="github" size={18} color={'#888'} />
+            {/* <Icon name="github" size={18} color={'#888'} />
             <Text style={{marginLeft: 6, color: '#888'}}>
               Github Repo (Library)
-            </Text>
+            </Text> */}
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={() => Linking.openURL('mailto:nfctogo@gmail.com')}
+            onPress={() => Linking.openURL('mailto:21bcs015@iiitdwd.ac.in')}
             style={{
               paddingHorizontal: 20,
               flexDirection: 'row',

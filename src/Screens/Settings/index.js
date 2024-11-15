@@ -16,9 +16,9 @@ import NfcManager, {NfcEvents} from 'react-native-nfc-manager';
 import {version} from '../../../package.json';
 
 const generalText = `
-NfcReWriter is an open source project built on-top-of react-native. 
+NfcConnect has been a project for Cybersecurity course 
 
-As an open source project, any kind of contributions and suggestions are always welcome!
+Any kind of contributions and suggestions are always welcome!
 `;
 
 function SettingsScreen(props) {
@@ -51,7 +51,7 @@ function SettingsScreen(props) {
 
   return (
     <>
-      <Appbar.Header style={{backgroundColor: 'white'}}>
+      <Appbar.Header style={{backgroundColor: '#00abff'}}>
         <Appbar.BackAction onPress={() => props.navigation.goBack()} />
         <Text style={{marginLeft: 10, fontSize: 18}}>About This App</Text>
       </Appbar.Header>
@@ -77,8 +77,8 @@ function SettingsScreen(props) {
               />
             </>
           )}
-          <List.Item title="Version" description={version} />
-          <List.Item
+          {/* <List.Item title="Version" description={version} /> */}
+          {/* <List.Item
             title="Repository"
             description="https://github.com/revtel/react-native-nfc-rewriter"
             onPress={() => {
@@ -86,9 +86,9 @@ function SettingsScreen(props) {
                 'https://github.com/revtel/react-native-nfc-rewriter',
               );
             }}
-          />
+          /> */}
           <List.Subheader>Creators</List.Subheader>
-          <List.Item
+          {/* <List.Item 
             title="Revteltech 忻旅科技"
             left={() => (
               <Image
@@ -101,8 +101,8 @@ function SettingsScreen(props) {
             onPress={() => {
               Linking.openURL('https://www.revtel.tech/en');
             }}
-          />
-          <List.Item
+          /> */}
+          {/* <List.Item
             title="NFC To GO"
             left={() => (
               <Image
@@ -115,13 +115,17 @@ function SettingsScreen(props) {
             onPress={() => {
               Linking.openURL('https://www.nfctogo.com');
             }}
-          />
+          /> */}
+          <List.Item title = "Ashish Jadhawar" description="21bcs015" />
+          <List.Item title = "Adi Jain" description="21bcs003" />
+          <List.Item title = "Chaytali Jawalekar" description="21bcs026" />
+          <List.Item title = "Rithwik Reddy" description="21bcs028" />
         </List.Section>
         <Button
           mode="contained"
           style={{margin: 20}}
           onPress={() => {
-            Linking.openURL('mailto:nfctogo@gmail.com');
+            Linking.openURL('mailto:21bcs015@iiitdwd.ac.in');
           }}>
           Contact Us
         </Button>
@@ -138,7 +142,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     margin: 10,
     paddingHorizontal: 15,
-    backgroundColor: 'white',
+    backgroundColor: '#00abff',
   },
   maintainerIcon: {
     width: 54,

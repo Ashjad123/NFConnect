@@ -13,7 +13,7 @@ function ToolKitScreen(props) {
 
   return (
     <>
-      <Appbar.Header style={{backgroundColor: 'white'}}>
+      <Appbar.Header style={{backgroundColor: '#00abff'}}>
         <Text style={{marginLeft: 10, fontSize: 24}}>NFC TOOLKIT</Text>
       </Appbar.Header>
 
@@ -241,8 +241,8 @@ function ToolKitScreen(props) {
         </List.Section>
 
         <List.Section>
-          <List.Subheader>IsoDep</List.Subheader>
-          <List.Item
+          {/* <List.Subheader>IsoDep</List.Subheader> */}
+          {/* <List.Item
             title="Custom Transceive"
             description="Send custom APDU command into your tag"
             left={NfcIcons.TransceiveIcon}
@@ -254,8 +254,8 @@ function ToolKitScreen(props) {
                 },
               })
             }
-          />
-          <List.Item
+          /> */}
+          {/* <List.Item
             title="[NTAG424 DNA] Enable temper detection"
             left={NfcIcons.TransceiveIcon}
             onPress={() => {
@@ -268,8 +268,8 @@ function ToolKitScreen(props) {
                 },
               });
             }}
-          />
-          <List.Item
+          /> */}
+          {/* <List.Item
             title="[NTAG424 DNA] Verify temper state"
             left={NfcIcons.TransceiveIcon}
             onPress={() => {
@@ -282,8 +282,8 @@ function ToolKitScreen(props) {
                 },
               });
             }}
-          />
-          <List.Item
+          /> */}
+          {/* <List.Item
             title="[NTAG424 DNA] Verify signature"
             left={NfcIcons.TransceiveIcon}
             onPress={() => {
@@ -296,12 +296,12 @@ function ToolKitScreen(props) {
                 },
               });
             }}
-          />
+          /> */}
         </List.Section>
 
         <List.Section>
-          <List.Subheader>Misc</List.Subheader>
-          <List.Item
+          {/* <List.Subheader>Misc</List.Subheader> */}
+          {/* <List.Item
             title="Test registerTagEvent API"
             description="registerTagEvent use NDEF-only scan for iOS"
             left={NfcIcons.NfcIcon}
@@ -314,7 +314,7 @@ function ToolKitScreen(props) {
                 });
               }
             }}
-          />
+          /> */}
         </List.Section>
       </ScrollView>
     </>

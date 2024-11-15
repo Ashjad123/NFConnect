@@ -60,7 +60,7 @@ function LandingScreen(props) {
   return (
     <View style={styles.container}>
       <Animated.Image
-        source={require('../../../images/nfc-rewriter-icon.png')}
+        source={require('../../../images/nfc-logo.jpeg')}
         resizeMode="contain"
         style={[
           styles.image,
